@@ -1,0 +1,288 @@
+<!-- 
+时间：2018-6-12
+修改人：郭岩
+联系方式：1310774021@qq.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页</title>
+    <link rel="stylesheet" href="fonts/iconfont1.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            font-family: 'Microsoft YaHei';
+        }
+
+        body {
+            background-color: #ccc;
+            background: url(img/1.jpg);
+            background-size: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* music+文字部分 */
+
+        body>a>.logo {
+            font-size: 100px;
+            color: #fff;
+            float: left;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        body>a>.logo>span {
+            float: left;
+            margin-left: 5px;
+            transition: all .3s;
+        }
+
+        body>a>.logo>span:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        body>a>.logo>span:nth-child(6):hover {
+            color: greenyellow;
+        }
+
+        /* 登陆注册部分 */
+
+        .login {
+            width: 460px;
+            /* height: 500px; */
+            /* background-color: rgba(0, 0, 0, .3); */
+            background-color: #000;
+            box-sizing: border-box;
+            padding-top: 25px;
+            margin-top: 100px;
+            float: right;
+            margin-right: 50px;
+            border: 1px solid #fff;
+            padding-bottom: 30px;
+        }
+
+        .login a {
+            color: #534D4D;
+
+        }
+
+        .login a :hover {
+            color: #00a4ff;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: normal;
+            text-align: center;
+            color: #fff;
+        }
+
+        input {
+            display: block;
+
+        }
+
+        .password,
+        .username {
+            outline: none;
+            /*这一行是点击输入框不变色*/
+            width: 380px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            font-size: 15px;
+            font-weight: 400;
+            background-color: rgba(0, 0, 0, .3);
+            color: #fff;
+            border: 1px solid #ccc;
+
+        }
+
+        .username {
+            margin-top: 30px;
+        }
+
+        .check {
+            width: 390px;
+            height: 50px;
+            /* background-color: aqua; */
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding-top: 30px;
+        }
+
+        .checkbox {
+            width: 16px;
+            height: 16px;
+            margin-top: 3px;
+            float: left;
+            margin-left: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        a.left {
+            display: block;
+            float: left;
+            margin-left: 5px;
+            color: #eee;
+
+        }
+
+        a.right {
+            float: right;
+            color: #eee;
+        }
+
+        a.right:hover {
+            color: #00a4ff;
+        }
+
+        .enter {
+            width: 380px;
+            height: 50px;
+            border: 0;
+            outline: none;
+            margin: 0 auto;
+            margin-top: 10px;
+            color: #fff;
+            font-size: 20px;
+            transition: all .3s;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: rgba(0, 0, 0, .1);
+
+        }
+        
+
+        .enter:hover {
+            color: #00a4ff;
+            border-color: #00a4ff;
+            background-color: rgba(0, 0, 0, .5);
+
+        }
+
+        .link {
+            width: 380px;
+            height: 50px;
+            background-color: #fff;
+            border: 0;
+            outline: none;
+            margin: 0 auto;
+            margin-top: 20px;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all .3s;
+            border: 1px solid #ccc;
+            background-color: rgba(0, 0, 0, .1);
+
+        }
+
+        .link:hover {
+            color: #00a4ff;
+            border-color: #00a4ff;
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        p {
+            text-align: center;
+            padding-top: 10px;
+            color: #ccc;
+        }
+
+        /* 图标字体模块 */
+
+        i.icon-QQ {
+            font-size: 40px;
+            color: #999;
+            margin-left: 110px;
+            transition: all .3s;
+        }
+
+        i.icon-QQ:hover {
+            color: #45B8F9;
+        }
+
+        i.icon-weixin {
+            color: #999;
+            font-size: 40px;
+            margin-left: 60px;
+            transition: all .3s;
+
+        }
+
+        i.icon-weixin:hover {
+            color: #19D100;
+        }
+
+        i.icon-weibo {
+            font-size: 42px;
+            color: #999;
+            margin-left: 60px;
+            transition: all .3s;
+        }
+
+        i.icon-weibo:hover {
+            color: #E90E24;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- logo部分 -->
+    <a href="main.html">
+        <div class="logo">
+            <span>M</span>
+            <span>U</span>
+            <span>S</span>
+            <span>I</span>
+            <span>C</span>
+            <span>+</span>
+        </div>
+    </a>
+    <!-- 账号的登陆部分 -->
+    <div class="login">
+        <h2>账号登录</h2>
+        <form action="404_not-found.html">
+            <input id="username" class="username" type="text" placeholder="手机号/邮箱/用户名">
+            <input id="password" class="password" type="password" placeholder="密码">
+            <div class="check">
+                <input class="checkbox" type="checkbox">
+                <a class="left" href="#">两周内自动登录</a>
+                <a class="right" href="404_not-found.html">忘记密码？</a>
+            </div>
+            <input class="enter" class="enter" type="submit" value="登录">
+            <input class="link" type="submit" value="注册账号">
+        </form>
+        <p>其他方式登录</p>
+        <br>
+        <!-- 第三方的登陆入口 -->
+        <a href="https://im.qq.com/pcqq/">
+            <i class="iconfont icon-QQ"></i>
+        </a>
+        <a href="https://weixin.qq.com/">
+            <i class="iconfont icon-weixin"></i>
+        </a>
+        <a href="https://weibo.com/login.php">
+            <i class="iconfont icon-weibo"></i>
+        </a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,423 @@
+<!-- 
+时间：2018-6-24
+修改人：郭岩
+联系方式：1310774021@qq.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="fonts/iconfont1.css">
+    <link rel="stylesheet" href="fonts/iconfont2.css">
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        *{
+            font-family: 'Microsoft YaHei';
+        }
+        /* banner轮播图部分 */
+
+        .banner {
+            width: 100%;
+            height: 750px;
+            /* background-color: #00a4ff; */
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        .banner>div {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+        }
+
+        .banner>div.first {
+            background: url(img/l1.jpg);
+            background-size: 100% auto;
+            background-attachment:fixed;
+            background-position: 0 top;
+        }
+
+        .banner>div.second {
+            background: url(img/Taylor.jpg);
+            background-size: 100% 100%;
+            display: none;
+            background-attachment: fixed;
+            background-size: 100% auto;
+            background-position: 0 bottom;
+        }
+
+        .banner>div.third {
+            background: url(img/Ed.jpg);
+            background-size: 100% 100%;
+            display: none;
+            background-attachment: fixed;
+            background-size: 100% auto;
+            background-position: 0 top;
+
+
+        }
+
+        .banner>.fourth {
+            background: url(img/Eminem.jpg);
+            background-size: 100% 100%;
+            display: none;
+            background-attachment: fixed;
+            background-size: 100% auto;
+            background-position: 0 top;
+
+
+        }
+
+        .banner>.undeline {
+            width: 400px;
+            height: 20px;
+            position: absolute;
+            /* background-color: red; */
+            left: 50%;
+            margin-left: -200px;
+            bottom: 50px;
+        }
+
+        .banner>.undeline>span {
+            display: block;
+            float: left;
+            width: 60px;
+            height: 10px;
+            margin-left: 20px;
+            box-sizing: border-box;
+            border-bottom: 3px solid rgba(255, 255, 255, .2);
+            cursor: pointer;
+        }
+
+        .banner>.undeline>span:nth-child(1) {
+            border-color: #fff;
+        }
+
+        /* 版心部分 */
+
+        .container {
+            width: 1200px;
+            /* height: 5000px; */
+            /* background-color: #fff; */
+            margin: 0 auto;
+            margin-top: 50px;
+            padding-top: 1px;
+            margin-bottom: 40px;
+        }
+
+        .container>.left,
+        .container>.right {
+            width: 35%;
+            height: 35px;
+            /* background-color: #00a4ff; */
+            float: left;
+            box-sizing: border-box;
+            border-bottom: 1px solid #000;
+        }
+
+        .container>.center {
+            width: 30%;
+            height: 70px;
+            /* background-color: red; */
+            float: left;
+            color: #000;
+            font-size: 30px;
+            text-align: center;
+            line-height: 70px;
+            font-weight: 100;
+        }
+
+        .container>.a {
+            width: 1200px;
+            height: 483px;
+            margin-top: 90px;
+        }
+
+        .container>.a>.A {
+            width: 500px;
+            height: 483px;
+            background-color: #fff;
+            background: url(img/c1.jpg) no-repeat;
+            background-color: #fff;
+            background-position: -120px;
+            background-size: 140% 100%;
+            float: left;
+        }
+
+        .container>.a>.B {
+            width: 700px;
+            height: 100%;
+            background: url(img/j1.jpg);
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .container>.b {
+            width: 1200px;
+            height: 700px;
+            margin: 0 auto;
+            background: url(img/m1.jpg);
+            background-size: 100% 100%;
+            /* background-attachment: fixed; */
+        }
+
+        .container>.c {
+            width: 1200px;
+            height: 500px;
+        }
+
+        .container>.c>.C {
+            width: 400px;
+            height: 500px;
+            background: url(img/j2.jpg);
+            float: left;
+        }
+
+        .container>.c>.D {
+            width: 800px;
+            height: 500px;
+            background: url(img/t1.jpg);
+            background-size: 100% 100%;
+            float: left;
+        }
+
+        .container>.d {
+            width: 1200px;
+            height: 600px;
+            background: url(img/e1.jpg);
+            background-size: 100% 100%;
+            /* background-attachment: fixed; */
+        }
+
+        .container>.e {
+            width: 1200px;
+            height: 750px;
+            background: url(img/r1.jpg);
+            background-size: 100% 100%;
+        }
+
+        .container>.f {
+            width: 1200px;
+            height: 700px;
+            background: url(img/w1.jpg);
+            background-size: 100% 100%;
+        }
+
+        .container>.g {
+            width: 1200px;
+            height: 700px;
+            background: url(img/w2.jpg);
+            background-size: 100% 100%;
+        }
+
+        .container>.h {
+            width: 1200px;
+            height: 700px;
+            background: url(img/j3.jpg);
+            background-size: 100% 100%;
+        }
+
+        /* 这是返回顶部按钮 */
+
+        .top {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, .7);
+            position: fixed;
+            top: 100px;
+            right: 0;
+            line-height: 50px;
+            text-align: center;
+            display: none;
+        }
+
+        .top:hover {
+            background-color: #000;
+        }
+
+        .top a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <!-- logo部分 -->
+            <a href="main.html">
+                <div class="logo">MUSIC+</div>
+            </a>
+            <!-- 导航栏部分 -->
+            <a href="main.html">
+                <div class="main">首页</div>
+            </a>
+            <a href="index2.html">
+                <div class="find">发现音乐</div>
+            </a>
+            <a href="index3.html">
+                <div class="list">我的音乐</div>
+            </a>
+            <a href="index4.html">
+                <div class="man">音乐人</div>
+            </a>
+            <!-- 搜索框部分 -->
+            <div class="search">
+
+                <i class="iconfont icon-sousuo"></i>
+                <input class="searchbar" type="text" placeholder="Search">
+            </div>
+            <div class="admin">
+                <i class="iconfont icon-user-o" id="icon-user-o"></i>
+                <a href="index1.html">登录 | 注册</a>
+            </div>
+            <div class="user" id="user">
+                <a href="index5.html">
+                    <div>用户信息</div>
+                </a>
+                <a href="index6.html">
+                    <div>用户等级</div>
+                </a>
+
+                <a href="index7.html">
+                    <div>关于本站</div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="banner">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+        <div class="undeline">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left"></div>
+        <div class="center">Welcome&nbsp;To&nbsp;Music+</div>
+        <div class="right"></div>
+        <div class="a">
+            <div class="A"></div>
+            <div class="B"></div>
+        </div>
+        <div class="b"></div>
+        <div class="c">
+            <div class="C"></div>
+            <div class="D"></div>
+        </div>
+        <div class="d"></div>
+        <div class="e"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+    </div>
+    <!-- 这是返回顶部按钮 -->
+    <div class="top">
+        <a href="#">TOP</a>
+    </div>
+
+
+    <!-- 底部 -->
+
+    <div class="footer">
+        <!-- footer顶部 -->
+        <div class="footer-top">
+            <div>MUSIC+</div>
+            <div>业务
+                <br>
+                <br>
+                <a href="404_not-found.html">实验室</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">社区</a>
+            </div>
+            <div>关于我们
+                <br>
+                <br>
+                <a href="404_not-found.html">会员条款</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">加入我们</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">关于MUSIC+</a>
+
+            </div>
+            <div>关注我们
+                <br>
+                <br>
+                <a href="404_not-found.html">新浪微博</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">联系我们</a>
+            </div>
+            <div>官方微信
+                <img src="img/wx.jpg" alt="官方微信">
+            </div>
+            <div>APP下载
+                <img src="img/wx.jpg" alt="APP下载">
+            </div>
+        </div>
+        <!-- footer中间部分 -->
+        <div class="footer-center">
+            <div>友情链接</div>
+            <a href="https://music.163.com/">
+                <i class="iconfont icon-wangyiyunyinleclick"></i>
+                <br> 网易云音乐
+            </a>
+
+            <a href="https://y.qq.com/">
+                <i class="iconfont icon-qqmusic"></i>
+                <br> QQ音乐
+            </a>
+
+            <a href="http://www.kugou.com/">
+                <i class="iconfont icon-kugouyinle"></i>
+                <br> 酷狗音乐
+            </a>
+
+            <a href="http://www.kuwo.cn/">
+                <i class="iconfont icon-kuwoyinle"></i>
+                <br> 酷我音乐
+            </a>
+
+            <a href="http://music.baidu.com/">
+                <i class="iconfont icon-baiduyinle"></i>
+                <br> 百度音乐
+            </a>
+
+            <a href="http://www.duomi.com/">
+                <i class="iconfont icon-duomiyinle"></i>
+                <br> 多米音乐
+            </a>
+
+        </div>
+        <div class="footer-bottom">
+            <p>MUSIC&nbsp;STAYS&nbsp;TRUE&nbsp;HERE&nbsp;&nbsp;&nbsp;&nbsp;&copy;2018&nbsp;&nbsp;MUSIC+
+                <span>技术支持:上海XXX网络科技有限公司</span>
+            </p>
+        </div>
+
+    </div>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/base.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+<!-- 
+时间：2018-6-24
+修改人：郭岩
+联系方式：1310774021@qq.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音乐人</title>
+    <link rel="stylesheet" href="fonts/iconfont1.css">
+    <link rel="stylesheet" href="fonts/iconfont2.css">
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        *{
+            font-family: 'Microsoft YaHei';
+        }
+        .header>.container .man {
+            background-color: #41C3BE;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+        .container-center {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding-bottom: 30px;
+            perspective: 100px;
+        }
+
+        .container-center>.banner {
+            width: 1200px;
+            height: 600px;
+            background: url(img/musician.jpg);
+            background-size: 100% 100%;
+            font-size: 200px;
+            color: #fff;
+            font-weight: 100;
+            line-height: 600px;
+            text-align: center;
+            background-attachment: fixed;
+        }
+
+        .title {
+            width: 1000px;
+            height: 50px;
+            margin: 0 auto;
+            font-size: 40px;
+            font-weight: 100;
+            margin-top: 70px;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #999;
+            padding-bottom: 20px;
+        }
+
+        .base-musician {
+            width: 1000px;
+            height: 260px;
+            background-color: #00a4ff;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            color: #fff;
+            transition: all .5s;
+            cursor: pointer;
+
+        }
+
+        .base-musician:hover {
+            /* box-shadow: 0 0 20px rgba(0, 0, 0, .9); */
+            transform: translateX(80px);
+        }
+
+        .tou {
+            width: 260px;
+            height: 100%;
+            color: #000;
+            float: left
+        }
+
+        .introduce {
+            width: 740px;
+            height: 100%;
+            box-sizing: border-box;
+            background-color: skyblue;
+            float: left;
+            padding-top: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: rgba(0, 0, 0, .5);
+            
+            
+        }
+
+        .introduce p {
+            text-align: left;
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        .introduce h2 {
+            font-size: 30px;
+            font-weight: normal;
+            text-align: center;
+
+        }
+
+        .tou-1 {
+            background: url(img/Taylor.jpg);
+            background-size: auto 100%;
+            background-position: -40px;
+        }
+
+        .tou-2 {
+            background: url(img/charlie.jpg);
+            background-size: auto 100%;
+            background-position: -100px;
+        }
+
+        .tou-3 {
+            background: url(img/m1.jpg);
+            background-size: auto 100%;
+            background-position: -74px;
+        }
+
+        .tou-4 {
+            background: url(img/e1.jpg);
+            background-size: auto 100%;
+            background-position: -60px;
+        }
+
+        .tou-5 {
+            background: url(img/carly.jpg);
+            background-size: auto 100%;
+            background-position: -110px;
+        }
+
+        .tou-6 {
+            background: url(img/aw.jpg);
+            background-size: auto 100%;
+            background-position: center center;
+        }
+
+        .tou-7 {
+            background: url(img/j3.jpg);
+            background-size: auto 100%;
+            background-position: -40px;
+        }
+
+        .tou-8 {
+            background: url(img/ed2.jpg);
+            background-size: auto 100%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <!-- logo部分 -->
+            <a href="main.html">
+                <div class="logo">MUSIC+</div>
+            </a>
+            <!-- 导航栏部分 -->
+            <a href="main.html">
+                <div class="main">首页</div>
+            </a>
+            <a href="index2.html">
+                <div class="find">发现音乐</div>
+            </a>
+            <a href="index3.html">
+                <div class="list">我的音乐</div>
+            </a>
+            <a href="index4.html">
+                <div class="man">音乐人</div>
+            </a>
+            <!-- 搜索框部分 -->
+            <div class="search">
+
+                <i class="iconfont icon-sousuo"></i>
+                <input class="searchbar" type="text" placeholder="Search">
+            </div>
+            <div class="admin">
+                <i class="iconfont icon-user-o" id="icon-user-o"></i>
+                <a href="index1.html">登录 | 注册</a>
+            </div>
+            <div class="user" id="user">
+                <a href="index5.html">
+                    <div>用户信息</div>
+                </a>
+                <a href="index6.html">
+                    <div>用户等级</div>
+                </a>
+
+                <a href="index7.html">
+                    <div>关于本站</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-center">
+        <div class="banner">MUSICIAN</div>
+        <div class="title">音乐人介绍</div>
+        <div class="base-musician">
+            <div class="tou tou-1"></div>
+            <div class="introduce">
+                <h2>Taylor Swift</h2>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;泰勒·斯威夫特（Taylor Swift），美国乡村音乐著名创作女歌手。
+                    1989年出生于美国宾州。2006年与独立唱片公司Big Machine签约并发行首张个人专辑《Taylor Swift》。
+                    Taylor曾获得美国乡村音乐协会奖年度最佳专辑奖、格莱美年度专辑奖等荣誉。</p>
+            </div>
+        </div>
+        <div class="base-musician">
+            <div class="tou tou-2"></div>
+            <div class="introduce">
+                <h2>Charlie Puth</h2>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小查尔斯·奥托·普斯（英语：Charles Otto Puth Jr.）是一位美国流行歌手，出生于美国新泽西州。2009年创建YouTube频道，上传翻唱视频并拥有一定的知名度。2016年1月，与Selena Gomez 合作的《We Don't Talk Anymore》更突破它在YouTube上以往的六亿点击率，成为Charlie Puth第二支在Billboard百强单曲榜的前十单曲。</p>
+            </div>
+        </div>
+        <div class="base-musician">
+            <div class="tou tou-3"></div>
+            <div class="introduce">
+                <h2>Marshmello</h2>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marshmello（棉花糖），是从2015年开始崛起的天才电音制作人，他制作的单曲"Alone"令他一夜爆红。从他开始发布自己的单曲开始，他带着可爱的头套面具，总以呆萌的形象示人，就连“棉花糖”这个名字也充满激萌感，而从未露出庐山真面目的他，也使他充满神秘感。在公众场合时，Marshmello会戴着一个头盔，他的身份是未知的。</p>
+            </div>
+        </div>
+        <div class="base-musician">
+            <div class="tou tou-4"></div>
+            <div class="introduce">
+                <h2>Eminem</h2>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;埃米纳姆（Eminem）是美国的一名说唱歌手。其风格类型为：Hardcore Rap（硬核说唱）。埃米纳姆最大的突破就是证明白人也能介入到黑人一统天下的说唱（RAP）界中，而且获得巨大的成功。同时他的叛逆不仅长期以来深受美国青少年喜爱，也让他在舆论中始终遭到抨击。Eminem获得的奖杯总数窜至历史第三位，居麦当娜和皮特-加布里埃尔之后。</p>
+            </div>
+        </div>
+        <div class="base-musician">
+            <div class="tou tou-5"></div>
+            <div class="introduce">
+                <h2>Carly Rae Jepsen</h2>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carly Rae Jepsen是一位来自加拿大的女歌手。2007年参加“Canadian Idol”选秀节目。表现突出的她获得了季军，虽说最后没有如愿夺下后冠，不过声音甜美，却不失个人风格的Carly Rae Jepsen也很快的发行的个人的首张专辑《Tug
+                Of War》，曲风大多活泼律动或是温润清新，而且几乎首首动听。</p>
+            </div>
+        </div>
+        <div class="base-musician">
+            <div class="tou tou-6"></div>
+            <div class="introduce">
+                <h2>Alan Walker</h2>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;艾兰·奥拉夫·沃克（Alan Olav Walker），1997年8月24日出生于英国英格兰北安普敦郡，挪威DJ、音乐制作人。 2014年11月，在YouTube上推出个人电音作品《Fade》而出道。2015年12月，通过索尼音乐发行个人第一首正式单曲《Faded》，该首歌曲的MV在YouTube上的点击量突破了12亿。</p>
+            </div>
+        </div>
+        <div class="base-musician">
+            <div class="tou tou-7"></div>
+            <div class="introduce">
+                <h2>Justin Bieber</h2>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;加拿大少年歌手Justin Bieber，早期因为在YouTube翻唱其他艺人的歌曲而出名，随后被经纪人挖掘并被Usher培养进入美国音乐歌坛。他是YouTube观看量最多的艺人及首位19岁前拥有五张冠军专辑、在首张专辑发行前就有4首TOP40单曲的歌手。在“福布斯全球百位巨星排行榜”上贾斯汀连续2年名列第三，男歌手权利排行第一，推特粉丝全球第一。</p>
+            </div>
+        </div>
+        <div class="base-musician">
+            <div class="tou tou-8"></div>
+            <div class="introduce">
+                <h2>Ed Sheeran</h2>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;爱德华·克里斯多弗·希兰（Edward Christopher Sheeran）艺名艾德·希兰（Ed Sheeran），1991年2月17日出生于英国英格兰西约克郡，是大西洋唱片（Atlantic Records）旗下的一位歌手同时也是一位创作人。
+                2011年6月，推出首支单曲《The A Team》荣获英国单曲榜第三名，同时该单曲在第55届格莱美颁奖典礼中被提名为年度最佳歌曲。</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- 要介绍的音乐人
+        ed sheeran
+        justin beiber
+        alan walker
+        carlie rae jepsen
+     -->
+
+
+
+
+
+    <!-- 底部 -->
+
+    <div class="footer">
+        <!-- footer顶部 -->
+        <div class="footer-top">
+            <div>MUSIC+</div>
+            <div>业务
+                <br>
+                <br>
+                <a href="404_not-found.html">实验室</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">社区</a>
+            </div>
+            <div>关于我们
+                <br>
+                <br>
+                <a href="404_not-found.html">会员条款</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">加入我们</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">关于MUSIC+</a>
+
+            </div>
+            <div>关注我们
+                <br>
+                <br>
+                <a href="404_not-found.html">新浪微博</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">联系我们</a>
+            </div>
+            <div>官方微信
+                <img src="img/wx.jpg" alt="官方微信">
+            </div>
+            <div>APP下载
+                <img src="img/wx.jpg" alt="APP下载">
+            </div>
+        </div>
+        <!-- footer中间部分 -->
+        <div class="footer-center">
+            <div>友情链接</div>
+            <a href="https://music.163.com/">
+                <i class="iconfont icon-wangyiyunyinleclick"></i>
+                <br> 网易云音乐
+            </a>
+
+            <a href="https://y.qq.com/">
+                <i class="iconfont icon-qqmusic"></i>
+                <br> QQ音乐
+            </a>
+
+            <a href="http://www.kugou.com/">
+                <i class="iconfont icon-kugouyinle"></i>
+                <br> 酷狗音乐
+            </a>
+
+            <a href="http://www.kuwo.cn/">
+                <i class="iconfont icon-kuwoyinle"></i>
+                <br> 酷我音乐
+            </a>
+
+            <a href="http://music.baidu.com/">
+                <i class="iconfont icon-baiduyinle"></i>
+                <br> 百度音乐
+            </a>
+
+            <a href="http://www.duomi.com/">
+                <i class="iconfont icon-duomiyinle"></i>
+                <br> 多米音乐
+            </a>
+
+        </div>
+        <div class="footer-bottom">
+            <p>MUSIC&nbsp;STAYS&nbsp;TRUE&nbsp;HERE&nbsp;&nbsp;&nbsp;&nbsp;&copy;2018&nbsp;&nbsp;MUSIC+
+                <span>技术支持:上海XXX网络科技有限公司</span>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/base.js"></script>
+</body>
+
+</html>

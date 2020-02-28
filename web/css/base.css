@@ -1,0 +1,366 @@
+/* 
+时间：2018-6-14
+修改人：郭岩
+联系方式：1310774021@qq.com 
+*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Microsoft YaHei';
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+
+        /* 头部 */
+
+        .header {
+            width: 100%;
+            height: 100px;
+            background-color: #000;
+            
+        }
+
+        .header>.container {
+            width: 1200px;
+            height: 100%;
+            /* background-color: purple; */
+            margin: 0 auto;
+            position: relative;
+            
+            
+        }
+
+        /* logo部分 */
+
+        .header>.container .logo {
+            width: 150px;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+            font-size: 30px;
+            float: left;
+            line-height: 100px;
+        }
+
+        /* 导航栏部分 */
+
+        .header>.container .main {
+            width: 120px;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+            float: left;
+            font-size: 20px;
+            transition: all .5s;
+            text-align: center;
+            line-height: 100px;
+
+
+        }
+
+        .header>.container .main:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .header>.container .find {
+            width: 120px;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+            float: left;
+            font-size: 20px;
+            transition: all .5s;
+            text-align: center;
+            line-height: 100px;
+
+
+        }
+
+        .header>.container .find:hover {
+            background-color: #5C4B77;
+        }
+
+        .header>.container .list {
+            width: 120px;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+            float: left;
+            font-size: 20px;
+            transition: all .5s;
+            text-align: center;
+            line-height: 100px;
+
+
+        }
+
+        .header>.container .list:hover {
+            background-color: #00a4ff;
+        }
+
+        .header>.container .man {
+            width: 120px;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+            float: left;
+            font-size: 20px;
+            transition: all .5s;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .header>.container .man:hover {
+            background-color: #41C3BE;
+        }
+
+        /* 搜索框部分 */
+
+        .search {
+            width: 240px;
+            height: 30px;
+            /* border: 1px solid #fff; */
+            float: left;
+            margin-top: 35px;
+            margin-left: 120px;
+            background-color: #2B2B2B;
+        }
+
+        i.icon-sousuo {
+            color: #fff;
+            border: 0;
+            font-size: 20px;
+            line-height: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+            cursor: pointer;
+            float: left;
+            background-color: #2B2B2B;
+        }
+
+        .search>.searchbar {
+            width: 200px;
+            height: 30px;
+            border: 0;
+            padding-left: 10px;
+            outline: none;
+            background-color: #2B2B2B;
+            color: #ccc;
+            font-size: 15px;
+            float: left;
+        }
+
+        /* 用户中心部分 */
+
+        .admin>a {
+            color: #fff;
+            line-height: 100px;
+            font-size: 15px;
+        }
+
+        .icon-user-o {
+            color: #fff;
+            font-size: 22px;
+            margin-left: 60px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        /* 用户信息部分 */
+
+        .user {
+            width: 200px;
+            height: 150px;
+            background-color: #000;
+            position: absolute;
+            top: 100px;
+            right: -20px;
+            display: none;
+            z-index: 999;
+        }
+
+        .user div {
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            color: #fff;
+            line-height: 50px;
+            text-align: center;
+            box-sizing: border-box;
+            border-bottom: 1px solid #333;
+            transition: all .5s;
+        }
+       
+        .user div:hover {
+            background-color: #2b2b2b;
+        }
+  
+  
+  /* footer部分 */
+
+        .footer {
+            width: 100%;
+            /* background-color: #00a4ff; */
+            background-color: #000;
+
+        }
+
+        /* footer顶部 */
+
+        .footer>.footer-top {
+            width: 1200px;
+            height: 220px;
+            background-color: #000;
+            margin: 0 auto;
+            border-bottom: 1px solid #fff;
+        }
+
+        .footer>.footer-top>div {
+            width: 200px;
+            height: 100%;
+            float: left;
+            color: #fff;
+            font-size: 16px;
+            box-sizing: border-box;
+            padding-top: 30px;
+
+        }
+
+        .footer>.footer-top>div>a {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .footer>.footer-top>div:nth-child(1) {
+            font-size: 34px;
+        }
+
+        .footer>.footer-top>div>img {
+            display: block;
+            margin-top: 30px;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* footer中间部分 */
+
+        .footer-center {
+            width: 1200px;
+            height: 150px;
+            background-color: #000;
+            margin: 0 auto;
+        }
+
+        .footer-center>div {
+            width: 108px;
+            /* height: 30px; */
+            color: #999;
+            box-sizing: border-box;
+            font-size: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #fff;
+            text-align: center;
+            float: left;
+        }
+
+
+        .footer-center>a {
+            display: block;
+            width: 182px;
+            height: 100%;
+            float: left;
+            text-align: center;
+            /* background-color: pink; */
+            color: #fff;
+            font-size: 15px;
+            box-sizing: border-box;
+            padding-top: 45px;
+            transition: all .5s;
+        }
+
+        .footer-center>a:nth-child(1) {
+            margin-left: 30px;
+        }
+
+        .footer-center>a:nth-child(2):hover {
+            background-color: #C20C0C;
+        }
+
+        .footer-center>a:nth-child(3):hover {
+            background-color: #31C27C;
+        }
+
+        .footer-center>a:nth-child(4):hover {
+            background-color: #0C8ED9;
+        }
+
+        .footer-center>a:nth-child(5):hover {
+            background-color: #FECA2E;
+        }
+
+        .footer-center>a:nth-child(6):hover {
+            background-color: #00a8ff;
+        }
+
+        .footer-center>a:nth-child(7):hover {
+            background-color: #E5004D;
+        }
+
+        /* 友情链接部分 */
+
+        .icon-wangyiyunyinleclick {
+            color: #fff;
+            font-size: 40px;
+        }
+
+        .icon-qqmusic {
+            font-size: 40px;
+        }
+
+        .icon-kugouyinle {
+            font-size: 40px;
+        }
+
+        .icon-kuwoyinle {
+            font-size: 40px;
+        }
+
+        .icon-baiduyinle {
+            font-size: 40px;
+        }
+
+        .icon-duomiyinle {
+            font-size: 40px;
+        }
+
+        /* footer-bottom部分 */
+
+        .footer-bottom {
+            width: 1200px;
+            height: 100px;
+            /* background-color: pink; */
+            background-color: #000;
+            margin: 0 auto;
+            box-sizing: border-box;
+            border-top: 1px solid #fff;
+            padding-top: 55px;
+        }
+
+        .footer-bottom>p {
+            margin-left: 500px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .footer-bottom>p>span {
+            margin-left: 62px;
+            font-size: 15px;
+        }

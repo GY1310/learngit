@@ -1,0 +1,539 @@
+<!-- 
+时间：2018-6-24
+修改人：郭岩
+联系方式：1310774021@qq.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的音乐</title>
+    <link rel="stylesheet" href="fonts/iconfont1.css">
+    <link rel="stylesheet" href="fonts/iconfont2.css">
+    <link rel="stylesheet" href="fonts/iconfont4.css">
+    <link rel="stylesheet" href="css/base.css">
+
+    <style>
+        *{
+            font-family: 'Microsoft YaHei';
+        }
+        .header>.container .list {
+            background-color: #00a4ff;
+        }
+
+        .container-center {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding-bottom: 30px;
+            /* height: 3000px; */
+        }
+
+        .container-center>.banner {
+            width: 1200px;
+            height: 600px;
+            background: url(img/Collection.jpg);
+            background-size: 100% 100%;
+            font-size: 200px;
+            color: #fff;
+            font-weight: 100;
+            line-height: 600px;
+            text-align: center;
+            background-attachment: fixed;
+        }
+
+        .title {
+            width: 1000px;
+            height: 50px;
+            margin: 0 auto;
+            font-size: 40px;
+            font-weight: 100;
+            margin-top: 70px;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #999;
+            padding-bottom: 20px;
+        }
+
+        .songs-list {
+            width: 900px;
+            height: 200px;
+            /* background-color: #00a4ff; */
+            margin: 0 auto;
+            /* border-bottom: 1px solid #2b2b2b; */
+            margin-bottom: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+            cursor: pointer;
+        }
+
+        .songs-list .list-left {
+            width: 200px;
+            height: 200px;
+            /* background-color: pink; */
+            float: left;
+            background: url(img/aw.jpg);
+            background-size: auto 100%;
+            background-position: center center;
+        }
+
+        .songs-list .list-right {
+            width: 700px;
+            height: 200px;
+            /* background-color: #00a4ff; */
+            float: left;
+            /* background-color: #F8F5E4; */
+            /* background-color: #EB2632; */
+            transition: all 1s;
+            background: url(img/222.jpg);
+        }
+
+        .songs-list:hover .list-right {
+            background: url(img/333.jpg);
+            color: #eee;
+        }
+
+
+        .songs-list .list-right .list-title {
+            width: 700px;
+            height: 40px;
+            /* background-color: #f5f5f5; */
+            box-sizing: border-box;
+            padding-left: 30px;
+            font-size: 20px;
+            font-weight: 100;
+            line-height: 40px;
+            padding-right: 30px;
+        }
+
+        .songs-list .list-right .list-title span {
+            float: right;
+            font-size: 15px;
+            line-height: 40px;
+        }
+
+        .songs-list .list-right .list-introduce {
+            width: 700px;
+            height: 100px;
+            /* background-color: #fff; */
+            box-sizing: border-box;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            color: #999;
+            transition: all 1s;
+        }
+
+        .songs-list:hover .list-right .list-introduce {
+            color: #fff;
+        }
+
+        .songs-list .list-right .list-btn {
+            width: 700px;
+            height: 60px;
+            /* background-color: pink; */
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+
+        .left-btn {
+            width: 140px;
+            height: 40px;
+            background-color: #00a4ff;
+            color: #fff;
+            float: left;
+            line-height: 40px;
+            text-align: center;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: all .5s;
+            border-radius: 3px;
+        }
+
+        .right-btn {
+            width: 100px;
+            height: 40px;
+            background-color: #00a4ff;
+            color: #fff;
+            float: left;
+            line-height: 40px;
+            text-align: center;
+            margin-left: 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: all .3s;
+            border-radius: 3px;
+        }
+
+        .left-btn:hover,
+        .right-btn:hover {
+            background-color: #0080c5;
+        }
+
+        /* 第一张歌单 */
+
+        #list-1 {
+            background: url(img/list1.jpg);
+        }
+
+        /* 第二张歌单 */
+
+        #list-2 {
+            background: url(img/list2.jpg);
+        }
+
+        /* 第三张歌单 */
+
+        #list-3 {
+            background: url(img/list3.jpg);
+        }
+
+        /* 第四张歌单 */
+
+        #list-4 {
+            background: url(img/list4.jpg);
+        }
+
+        /* 第五张歌单 */
+
+        #list-5 {
+            background: url(img/list5.jpg);
+        }
+
+        /* 第六张歌单 */
+
+        #list-6 {
+            background: url(img/list6.jpg);
+        }
+
+        /* 第七张歌单 */
+
+        #list-7 {
+            background: url(img/list7.jpg);
+        }
+
+        /* 第八张歌单 */
+
+        #list-8 {
+            background: url(img/list8.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <!-- logo部分 -->
+            <a href="main.html">
+                <div class="logo">MUSIC+</div>
+            </a>
+            <!-- 导航栏部分 -->
+            <a href="main.html">
+                <div class="main">首页</div>
+            </a>
+            <a href="index2.html">
+                <div class="find">发现音乐</div>
+            </a>
+            <a href="index3.html">
+                <div class="list">我的音乐</div>
+            </a>
+            <a href="index4.html">
+                <div class="man">音乐人</div>
+            </a>
+            <!-- 搜索框部分 -->
+            <div class="search">
+
+                <i class="iconfont icon-sousuo"></i>
+                <input class="searchbar" type="text" placeholder="Search">
+            </div>
+            <div class="admin">
+                <i class="iconfont icon-user-o" id="icon-user-o"></i>
+                <a href="index1.html">登录 | 注册</a>
+            </div>
+            <div class="user" id="user">
+                <a href="index5.html">
+                    <div>用户信息</div>
+                </a>
+                <a href="index6.html">
+                    <div>用户等级</div>
+                </a>
+
+                <a href="index7.html">
+                    <div>关于本站</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-center">
+        <div class="banner">Collection</div>
+        <div class="title">我收藏的歌单</div>
+
+        <!-- 第一个歌单 -->
+        <div class="songs-list">
+            <div class="list-left" id="list-1"></div>
+            <div class="list-right">
+                <div class="list-title">用一首歌来赶走心里的不快乐
+                    <span>by：飘洋黑子</span>
+                </div>
+                <div class="list-introduce">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请让你的梦想成真，而不要让它永远只是梦想。音乐是唯一中没有副作用的药，这种说法也许有人反对有人赞同 但不可否定的是在一部分人难过的时候听几首自己喜欢的歌心情就回好一些所，而不会有任何的副作用这也许就是主题所说
+                    但愿有更多的人听过以后会开心快乐
+                </div>
+                <div class="list-btn">
+                    <a href="#">
+                        <div class="left-btn">
+                            <i class="iconfont icon-bofang"></i>&nbsp;播放全部</div>
+                    </a>
+                    <a href="#">
+                        <div class="right-btn">
+                            <i class="iconfont icon-fenxiang"></i>&nbsp;分享</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 第二个歌单 -->
+        <div class="songs-list">
+            <div class="list-left" id="list-2"></div>
+            <div class="list-right">
+                <div class="list-title">沉醉于迷幻般的意境
+                    <span>by：ATLiens</span>
+                </div>
+                <div class="list-introduce">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自赏乐用不可抗拒的喧嚣，伴随着长时间低沉单调的吉他回复、扭曲失真的声波和一系列吉他回馈的层叠，让人声和旋律消弥于吉他声墙中，从而营造出一种让你完全分辨不出各种乐器音色的音乐冲击。
+                </div>
+                <div class="list-btn">
+                    <a href="#">
+                        <div class="left-btn">
+                            <i class="iconfont icon-bofang"></i>&nbsp;播放全部</div>
+                    </a>
+                    <a href="#">
+                        <div class="right-btn">
+                            <i class="iconfont icon-fenxiang"></i>&nbsp;分享</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 第三个歌单 -->
+        <div class="songs-list">
+            <div class="list-left" id="list-3"></div>
+            <div class="list-right">
+                <div class="list-title">首届Billboard Dance 100榜单公布
+                    <span>by：热电音</span>
+                </div>
+                <div class="list-introduce">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;专注于每位艺术家过去一年(2017)的成就，美国公告牌Billboard首届Billboard Dance 100电音舞曲艺人DJ排名由来自174个国家电子舞曲音乐粉丝的近180,000
+                    投票量。除了粉丝投票之外，Billboard Dance 100的结果还获得了国内和全球排行榜统计数据和巡演数据，Billboard编辑和图表部门负责衡量这个类型的多元化人才的整体排名。
+                </div>
+                <div class="list-btn">
+                    <a href="#">
+                        <div class="left-btn">
+                            <i class="iconfont icon-bofang"></i>&nbsp;播放全部</div>
+                    </a>
+                    <a href="#">
+                        <div class="right-btn">
+                            <i class="iconfont icon-fenxiang"></i>&nbsp;分享</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 第四个歌单 -->
+        <div class="songs-list">
+            <div class="list-left" id="list-4"></div>
+            <div class="list-right">
+                <div class="list-title">绝色复古︱幻游梦境 与你消磨时光
+                    <span>by：苏箫羽</span>
+                </div>
+                <div class="list-introduce">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;落日归巢，我与你漫步于异国的小镇 是巧合，让余晖中只有你我二人 在我的目光里，你解开衣扣让我窥视你性感的一角 你就这样，在老久操场的秋千上
+                    而当你离去，你仍在我的眼睛里 我的后视镜告诉我，余晖勾勒的你的模样</div>
+                <div class="list-btn">
+                    <a href="#">
+                        <div class="left-btn">
+                            <i class="iconfont icon-bofang"></i>&nbsp;播放全部</div>
+                    </a>
+                    <a href="#">
+                        <div class="right-btn">
+                            <i class="iconfont icon-fenxiang"></i>&nbsp;分享</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 第五个歌单 -->
+        <div class="songs-list">
+            <div class="list-left" id="list-5"></div>
+            <div class="list-right">
+                <div class="list-title">慎用！高浓度肾上腺素
+                    <span>by：冷山集</span>
+                </div>
+                <div class="list-introduce">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 精选100首臻美电音，喜欢电音的你不容错过。 主打House和Trance，风格偏轻，给你不同于重低音的新奇感受。 Tobu，A神，猫厂等等均有收录。
+                    来戴上耳机，感受不一样的世界。
+                </div>
+                <div class="list-btn">
+                    <a href="#">
+                        <div class="left-btn">
+                            <i class="iconfont icon-bofang"></i>&nbsp;播放全部</div>
+                    </a>
+                    <a href="#">
+                        <div class="right-btn">
+                            <i class="iconfont icon-fenxiang"></i>&nbsp;分享</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 第六个歌单 -->
+        <div class="songs-list">
+            <div class="list-left" id="list-6"></div>
+            <div class="list-right">
+                <div class="list-title">「静心钢琴」浮游于梦 弹奏细碎温柔
+                    <span>by：治愈兔</span>
+                </div>
+                <div class="list-introduce">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 一直觉得夜晚是生活最珍贵的回馈，安静的氛围更能听清身边的声音。深夜里最熟悉的鼾声，黎明前窗外的脚步声，平时听不清的心跳声，偶尔还能听见几句熟睡时的梦呓。无意识的呓语在夜里都格外清晰，让清醒的人也不禁暖化了心。</div>
+                <div class="list-btn">
+                    <a href="#">
+                        <div class="left-btn">
+                            <i class="iconfont icon-bofang"></i>&nbsp;播放全部</div>
+                    </a>
+                    <a href="#">
+                        <div class="right-btn">
+                            <i class="iconfont icon-fenxiang"></i>&nbsp;分享</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 第七个歌单 -->
+        <div class="songs-list">
+            <div class="list-left" id="list-7"></div>
+            <div class="list-right">
+                <div class="list-title">Eminem-姆爷精选
+                    <span>by：offmask</span>
+                </div>
+                <div class="list-introduce">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;算是一个听阿姆听了十多年的老残粉的心愿。把艾米纳姆00年以来的专辑都听了一遍，人肉筛出来的精选集。有人问为什么喜欢埃米纳姆，想了下应该是喜欢痞子阿姆音乐中传递的那种anger和strength的感觉。我承认对一份Eminem精选集来说，90多首是比较多。but，都好听啊。。。</div>
+                <div class="list-btn">
+                    <a href="#">
+                        <div class="left-btn">
+                            <i class="iconfont icon-bofang"></i>&nbsp;播放全部</div>
+                    </a>
+                    <a href="#">
+                        <div class="right-btn">
+                            <i class="iconfont icon-fenxiang"></i>&nbsp;分享</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 第八个歌单 -->
+        <div class="songs-list">
+            <div class="list-left" id="list-8"></div>
+            <div class="list-right">
+                <div class="list-title">2018 FIFA World Cup
+                    <span>by：DrOscar-RadioFM</span>
+                </div>
+                <div class="list-introduce">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;炎夏“球”生！四年的翘首以待，只为这一个月的狂欢！ 这个夏天，让我们凝聚在这充满雄性荷尔蒙的激情战场，乾杯！yep！！</div>
+                <div class="list-btn">
+                    <a href="#">
+                        <div class="left-btn">
+                            <i class="iconfont icon-bofang"></i>&nbsp;播放全部</div>
+                    </a>
+                    <a href="#">
+                        <div class="right-btn">
+                            <i class="iconfont icon-fenxiang"></i>&nbsp;分享</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <!-- 底部 -->
+
+    <div class="footer">
+        <!-- footer顶部 -->
+        <div class="footer-top">
+            <div>MUSIC+</div>
+            <div>业务
+                <br>
+                <br>
+                <a href="404_not-found.html">实验室</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">社区</a>
+            </div>
+            <div>关于我们
+                <br>
+                <br>
+                <a href="404_not-found.html">会员条款</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">加入我们</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">关于MUSIC+</a>
+
+            </div>
+            <div>关注我们
+                <br>
+                <br>
+                <a href="404_not-found.html">新浪微博</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">联系我们</a>
+            </div>
+            <div>官方微信
+                <img src="img/wx.jpg" alt="官方微信">
+            </div>
+            <div>APP下载
+                <img src="img/wx.jpg" alt="APP下载">
+            </div>
+        </div>
+        <!-- footer中间部分 -->
+        <div class="footer-center">
+            <div>友情链接</div>
+            <a href="https://music.163.com/">
+                <i class="iconfont icon-wangyiyunyinleclick"></i>
+                <br> 网易云音乐
+            </a>
+
+            <a href="https://y.qq.com/">
+                <i class="iconfont icon-qqmusic"></i>
+                <br> QQ音乐
+            </a>
+
+            <a href="http://www.kugou.com/">
+                <i class="iconfont icon-kugouyinle"></i>
+                <br> 酷狗音乐
+            </a>
+
+            <a href="http://www.kuwo.cn/">
+                <i class="iconfont icon-kuwoyinle"></i>
+                <br> 酷我音乐
+            </a>
+
+            <a href="http://music.baidu.com/">
+                <i class="iconfont icon-baiduyinle"></i>
+                <br> 百度音乐
+            </a>
+
+            <a href="http://www.duomi.com/">
+                <i class="iconfont icon-duomiyinle"></i>
+                <br> 多米音乐
+            </a>
+
+        </div>
+        <div class="footer-bottom">
+            <p>MUSIC&nbsp;STAYS&nbsp;TRUE&nbsp;HERE&nbsp;&nbsp;&nbsp;&nbsp;&copy;2018&nbsp;&nbsp;MUSIC+
+                <span>技术支持:上海XXX网络科技有限公司</span>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/base.js"></script>
+</body>
+
+</html>

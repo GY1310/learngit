@@ -1,0 +1,348 @@
+<!-- 
+时间：2018-6-24
+修改人：郭岩
+联系方式：1310774021@qq.com 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发现音乐</title>
+    <link rel="stylesheet" href="fonts/iconfont1.css">
+    <link rel="stylesheet" href="fonts/iconfont2.css">
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        *{
+            font-family: 'Microsoft YaHei';
+        }
+        .header>.container .find {
+            background-color: #5C4B77;
+        }
+
+        body {
+            background-color: #F5F5F5;
+            
+        }
+
+        /* banner部分 */
+
+        .banner {
+            width: 1200px;
+            /* height: 2000px; */
+            margin: 0 auto;
+            background-color: #F5F5F5;
+            padding-bottom: 10px;
+
+        }
+
+        .banner>.banner-top {
+            width: 1200px;
+            height: 600px;
+            background: url(img/find.jpg);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .banner-head {
+            width: 1000px;
+            height: 50px;
+            margin: 0 auto;
+            font-size: 40px;
+            font-weight: 100;
+            margin-top: 70px;
+            line-height: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #999;
+            padding-bottom: 20px;
+        }
+
+        /* 音乐封面部分 */
+
+        .song {
+            width: 1160px;
+            height: 400px;
+            /* background-color: pink; */
+            margin: 0 auto;
+            margin-bottom: 60px;
+            perspective: 200px;
+        }
+
+        .songs {
+            width: 370px;
+            height: 400px;
+            /* background-color: aqua; */
+            float: left;
+            transition: all .5s;
+
+        }
+
+        .songs:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, .9);
+            transform: translateY(-20px);
+            cursor: pointer;
+        }
+
+        .songs:nth-child(2) {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        .songs>.songs-bottom {
+            width: 100%;
+            height: 80px;
+            background-color: rgba(0, 0, 0, .3);
+            margin-top: 320px;
+            color: #fff;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 20px;
+            font-size: 25px;
+            font-weight: 100;
+        }
+
+
+        /* 歌手 */
+
+        .troye {
+            background: url(img/t3.jpg);
+            background-size: auto 100%;
+            background-position: -50px;
+        }
+
+        .ed {
+            background: url(img/ed2.jpg);
+            background-size: auto 100%;
+
+        }
+
+        .taylor {
+            background: url(img/t4.jpg);
+            background-size: auto 100%;
+
+        }
+
+        .marshmello {
+            background: url(img/m1.jpg);
+            background-size: auto 100%;
+            background-position: -125px;
+        }
+
+        .dust {
+            background: url(img/dust.jpg);
+            background-size: auto 100%;
+            background-position: -270px;
+        }
+
+        .charlie {
+            background: url(img/charlie.jpg);
+            background-size: auto 100%;
+            background-position: -170px;
+        }
+
+        .rihanna {
+            background: url(img/r1.jpg);
+            background-size: auto 100%;
+            background-position: -50px;
+        }
+
+        .aw {
+            background: url(img/aw.jpg);
+            background-size: auto 100%;
+            background-position: -165px;
+        }
+
+        .owl {
+            background: url(img/owl.jpg);
+            background-size: auto 100%;
+            background-position: -50px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="container">
+            <!-- logo部分 -->
+            <a href="main.html">
+                <div class="logo">MUSIC+</div>
+            </a>
+            <!-- 导航栏部分 -->
+            <a href="main.html">
+                <div class="main">首页</div>
+            </a>
+            <a href="index2.html">
+                <div class="find">发现音乐</div>
+            </a>
+            <a href="index3.html">
+                <div class="list">我的音乐</div>
+            </a>
+            <a href="index4.html">
+                <div class="man">音乐人</div>
+            </a>
+            <!-- 搜索框部分 -->
+            <div class="search">
+
+                <i class="iconfont icon-sousuo"></i>
+                <input class="searchbar" type="text" placeholder="Search">
+            </div>
+            <div class="admin">
+                <i class="iconfont icon-user-o" id="icon-user-o"></i>
+                <a href="index1.html">登录 | 注册</a>
+            </div>
+            <div class="user" id="user">
+                <a href="index5.html">
+                    <div>用户信息</div>
+                </a>
+                <a href="index6.html">
+                    <div>用户等级</div>
+                </a>
+
+                <a href="index7.html">
+                    <div>关于本站</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner部分 -->
+    <div class="banner">
+        <div class="banner-top"></div>
+        <div class="banner-head">探索音乐的世界</div>
+        <!-- 第一排 -->
+        <div class="song">
+            <div class="songs troye">
+                <div class="songs-bottom">There For You</div>
+            </div>
+            <div class="songs marshmello">
+                <div class="songs-bottom">Wolves</div>
+            </div>
+            <div class="songs ed">
+                <div class="songs-bottom">Shape Of You</div>
+            </div>
+        </div>
+
+        <!-- 第二排 -->
+        <div class="song">
+            <div class="songs taylor">
+                <div class="songs-bottom">Blank Space</div>
+            </div>
+            <div class="songs aw">
+                <div class="songs-bottom">All Falls Down</div>
+            </div>
+            <div class="songs dust">
+                <div class="songs-bottom">Dusk Till Dawn</div>
+            </div>
+        </div>
+
+        <!-- 第三排 -->
+        <div class="song">
+            <div class="songs charlie">
+                <div class="songs-bottom">We Dont't Talk Anymore</div>
+            </div>
+            <div class="songs rihanna">
+                <div class="songs-bottom">The Monster</div>
+            </div>
+            <div class="songs owl">
+                <div class="songs-bottom">Good Time</div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- 底部 -->
+
+    <div class="footer">
+        <!-- footer顶部 -->
+        <div class="footer-top">
+            <div>MUSIC+</div>
+            <div>业务
+                <br>
+                <br>
+                <a href="404_not-found.html">实验室</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">社区</a>
+            </div>
+            <div>关于我们
+                <br>
+                <br>
+                <a href="404_not-found.html">会员条款</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">加入我们</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">关于MUSIC+</a>
+
+            </div>
+            <div>关注我们
+                <br>
+                <br>
+                <a href="404_not-found.html">新浪微博</a>
+                <br>
+                <br>
+                <a href="404_not-found.html">联系我们</a>
+            </div>
+            <div>官方微信
+                <img src="img/wx.jpg" alt="官方微信">
+            </div>
+            <div>APP下载
+                <img src="img/wx.jpg" alt="APP下载">
+            </div>
+        </div>
+        <!-- footer中间部分 -->
+        <div class="footer-center">
+            <div>友情链接</div>
+            <a href="https://music.163.com/">
+                <i class="iconfont icon-wangyiyunyinleclick"></i>
+                <br> 网易云音乐
+            </a>
+
+            <a href="https://y.qq.com/">
+                <i class="iconfont icon-qqmusic"></i>
+                <br> QQ音乐
+            </a>
+
+            <a href="http://www.kugou.com/">
+                <i class="iconfont icon-kugouyinle"></i>
+                <br> 酷狗音乐
+            </a>
+
+            <a href="http://www.kuwo.cn/">
+                <i class="iconfont icon-kuwoyinle"></i>
+                <br> 酷我音乐
+            </a>
+
+            <a href="http://music.baidu.com/">
+                <i class="iconfont icon-baiduyinle"></i>
+                <br> 百度音乐
+            </a>
+
+            <a href="http://www.duomi.com/">
+                <i class="iconfont icon-duomiyinle"></i>
+                <br> 多米音乐
+            </a>
+
+        </div>
+        <div class="footer-bottom">
+            <p>MUSIC&nbsp;STAYS&nbsp;TRUE&nbsp;HERE&nbsp;&nbsp;&nbsp;&nbsp;&copy;2018&nbsp;&nbsp;MUSIC+
+                <span>技术支持:上海XXX网络科技有限公司</span>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/base.js"></script>
+</body>
+
+</html>
