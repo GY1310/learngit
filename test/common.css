@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f5f5f5;
+}
+.bd {
+    width: 400px;
+    height: 682px;
+    background: url(img/phone.png) no-repeat;
+    background-size: 100% 100%;
+    /* margin: 0 auto; */
+    padding-top: 68px;
+}
+#f4 {
+    border: none;
+}
+
+.content {
+    width: 350px;
+    height: 588px;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+
+}
+
+/* 顶部 */
+.header {
+    width: 100%;
+    height: 30px;
+    background-color: #1c6dc0;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+}
+
+/* 中间内容部分 */
+.container {
+    width: 100%;
+    /* height: 590px; */
+    /* background-color: pink; */
+}
+
+/* 底部导航部分 */
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+
+
+.footer .navbar {
+    width: 60px;
+    /* height: 50px; */
+    /* background-color: skyblue; */
+    float: left;
+    margin-left: 8px;
+    margin-top: 2px;
+
+}
+
+.footer .navbar .img {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+}
+
+
+.footer .navbar #n1 {
+    background: url(img/nav10.png) no-repeat;
+    background-size: 82%;
+    background-position: center;
+    transition: background .2s;
+}
+
+.footer .navbar #n2 {
+    background: url(img/nav20.png) no-repeat;
+    background-size: 82%;
+    background-position: center;
+    transition: background .2s;
+}
+
+.footer .navbar #n3 {
+    background: url(img/nav30.png) no-repeat;
+    background-size: 82%;
+    background-position: center;
+    transition: background .2s;
+}
+
+
+.footer .navbar #n4 {
+    background: url(img/nav40.png) no-repeat;
+    background-size: 82%;
+    background-position: center;
+    transition: background .2s;
+}
+
+.footer .navbar #n5 {
+    background: url(img/nav50.png) no-repeat;
+    background-size: 82%;
+    background-position: center;
+    transition: background .2s;
+}
+
+.footer .navbar {
+    cursor: pointer;
+}
+
+.footer .navbar span {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    transition: color .2s;
+}
+
+.footer .navbar:hover span {
+    color: #f00;
+}
+
+.footer .navbar:hover #n1 {
+    background: url(img/nav11.png) no-repeat;
+    background-size: 82%;
+    background-position: center;
+}
+
+.footer .navbar:hover #n2 {
+    background: url(img/nav21.png) no-repeat;
+    background-size: 82%;
+    background-position: center;
+}
+
+.footer .navbar:hover #n3 {
+    background: url(img/nav31.png) no-repeat;
+    background-size: 82%;
+    background-position: center;
+}
+
+.footer .navbar:hover #n4 {
+    background: url(img/nav41.png) no-repeat;
+    background-size: 82%;
+    background-position: center;
+}
+
+.footer .navbar:hover #n5 {
+    background: url(img/nav51.png) no-repeat;
+    background-size: 82%;
+    background-position: center;
+}
+
+
