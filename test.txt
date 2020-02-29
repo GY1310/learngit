@@ -6,4 +6,6 @@ hello world.
 hello git.
 
 hello github!!
-Creatint a new branch is quick & simple.
+
+Creatint a new branch is quick and simple.
+
