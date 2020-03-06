@@ -1,0 +1,109 @@
+/* 通配符作为选择器 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 背景颜色 */
+    background-color: #f5f5f5;
+    /* 上内边距 */
+    padding-top: 40px;
+    /* 下内边距 */
+    padding-bottom: 80px;
+}
+
+a {
+    /* 文字样式：无 */
+    text-decoration: none;
+}
+
+ul,ol li{
+    /* 列表样式：无 */
+    list-style: none;
+}
+
+.first img{
+    /* 宽度 */
+    width: 100%;
+}
+
+/* 头部 */
+header {
+    /* 宽度 */
+    width: 100%;
+    /* 高度 */
+    height: 40px;
+    /* 背景颜色 */
+    background-color: #1c6dc0;
+    /* 文字颜色 */
+    color: #fff;
+    /* 文字水平对齐方式：居中 */
+    text-align: center;
+    /* 行高 */
+    line-height: 40px;
+    /* 使用固定定位 */
+    position: fixed;
+    /* 固定定位：距离上边0像素 */
+    top: 0;
+    /* 固定定位：距离左边0像素 */
+    left: 0;
+}
+/* 底部导航菜单 */
+footer {
+    /* 元素显示方式：表格 */
+    display: table;
+    /* 宽度 */
+    width: 100%;
+    /* 高度 */
+    height: 70px;
+    /* 固定定位 */
+    position: fixed;
+    /* 固定定位：距离左边0像素 */
+    left: 0;
+    /* 固定定位：距离下边0像素 */
+    bottom: 0;
+}
+
+footer ul{
+    /* 元素显示方式：表格 */
+    display: table;
+    /* 宽度 */
+    width: 100%;
+    /* 高度 */
+    height: 70px;
+    /* 背景颜色 */
+    background-color: #000;
+}
+
+footer ul a{
+    /* 元素显示方式：格子 */
+    display: table-cell;
+    /* 宽度 */
+    width: 20%;
+    /* 文字水平对齐方式 */
+    text-align: center;
+    /* 垂直对齐方式：居中 */
+    vertical-align: middle;
+    
+}
+
+footer ul a li{
+    /* 列表样式：无 */
+   list-style: none;
+}
+
+footer ul li span{
+    /* 元素显示方式：块级元素 */
+    display: block;
+    /* 颜色 */
+    color: #fff;
+    /* 字号大小 */
+    font-size: 12px;
+
+}
+
+footer ul a li img {
+    /* 宽度 */
+    width: 22px;
+}
